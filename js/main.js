@@ -26,6 +26,7 @@ function gaEvent(clickedItem) {
   ga("send", "event", clickedItem, "click");
 }
 
+// Based on https://codepen.io/bradtraversy/pen/jeNjwP by Brad Traversy
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
