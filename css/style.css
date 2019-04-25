@@ -76,6 +76,10 @@ h5 {
   max-width: 150px;
 }
 
+.copyright {
+  opacity: 0.4;
+}
+
 /* Cursor */
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
