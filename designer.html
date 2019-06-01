@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/designer-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>Stephen Lerminiaux's Web Design Portfolio</title>
+  </head>
+
+  <body>
+    <div id="particles-js">
+      <div class="container">
+        <header id="header">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Stephen Lerminiaux</h1>
+              <h2>Web Design Hobbyist</h2>
+              <p>
+                Welcome! This a small showcase of my personal web design works,
+                working with HTML5, CSS3, and Javascript technologies. I do my
+                best to employ a mobile-first development strategy and modern
+                design techniques from CSS media queries to Flexbox and the Grid
+                system. I enjoy experimenting with various CSS and
+                Javascript/Jquery libraries such as Bootstrap and
+                ScrollReveal.js. Recently I have been exploring CSS
+                preprocessors such as SASS to improve my design workflow.
+              </p>
+            </div>
+          </div>
+        </header>
+        <section id="projects">
+          <div class="row align-items-center no-gutter mb-4 mb-md-5">
+            <div class="col-md-5 col-md-push-7">
+              <div class="featured-text-right">
+                <h2>"Splitscreen"</h2>
+                <p>
+                  A simple split-screen landing page with some basic animation.
+                  Uses basic HTML5, CSS3, and vanilla Javascript. Free stock
+                  images from <a href="https://www.pexels.com/">Pexels</a>.
+                  Inspired by
+                  <a href="https://www.youtube.com/watch?v=oRmQN244Ir0"
+                    >Traversy Media</a
+                  >.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-7 col-md-pull-5">
+              <a class="image" href="./split.html" target="_blank"
+                ><img class="img-responsive" src="img/showcase/Split.JPG"
+              /></a>
+            </div>
+          </div>
+          <div class="row align-items-center no-gutter mb-4 mb-md-5">
+            <div class="col-md-5">
+              <div class="featured-text-left">
+                <h2>"Reborn"</h2>
+                <p>
+                  A single-page Bootstrap theme that uses the ScrollReveal.js
+                  Jquery library. Free stock images from
+                  <a href="https://unsplash.com/">Unsplash</a>. Inspired by
+                  <a href="https://html5up.net/">HTML5 UP</a> templates.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-7 img-right">
+              <a class="image" href="./reborn.html" target="_blank"
+                ><img class="img-responsive" src="img/showcase/Reborn.JPG"
+              /></a>
+            </div>
+          </div>
+          <div class="row align-items-center no-gutter mb-4 mb-md-5">
+            <div class="col-md-5 col-md-push-7">
+              <div class="featured-text-right">
+                <h2>"Anticipate"</h2>
+                <p>
+                  A simple landing page with a free stock video from
+                  <a href="https://www.videvo.net/">Videvo</a> and the
+                  ProgressBar Javascript library. Inspired by
+                  <a href="https://html5up.net/">HTML5 UP</a> templates.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-7 col-md-pull-5">
+              <a class="image" href="./anticipate.html" target="_blank"
+                ><img class="img-responsive" src="img/showcase/Anticipate.JPG"
+              /></a>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>I'm available for work, get in touch</h2>
+            </div>
+            <div class="col-sm-4">
+              <p>
+                <a
+                  class="btn"
+                  href="https://www.linkedin.com/in/stephen-lerminiaux-969995156/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i>&emsp;LinkedIn</a
+                >
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <p>
+                <a
+                  class="btn"
+                  href="mailto:stephen@lerminiaux.me?Subject=Hello,%20Stephen"
+                  target="_top"
+                  ><i class="fas fa-envelope"></i>&emsp;Email</a
+                >
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <p>
+                <a
+                  class="btn"
+                  href="https://github.com/lerminis"
+                  target="_blank"
+                  ><i class="fab fa-github"></i>&emsp;Github</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer id="footer">
+          <p class="copyright">
+            &copy; Stephen Lerminiaux | Copyright <span id="year"></span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      document.getElementById("year").innerText = new Date().getFullYear();
+
+      $(document).ready(function() {
+        console.log("Loading particles.js");
+
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 33,
+              density: {
+                enable: true,
+                value_area: 1420.4657549380909
+              }
+            },
+            color: {
+              value: "#ffffff"
+            },
+            shape: {
+              type: "triangle",
+              stroke: {
+                width: 0,
+                color: "#000000"
+              },
+              polygon: {
+                nb_sides: 5
+              }
+            },
+            opacity: {
+              value: 0.06,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+              }
+            },
+            size: {
+              value: 12,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+              },
+              line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1
+              },
+              move: {
+                enable: true,
+                speed: 6,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+                attract: {
+                  enable: false,
+                  rotateX: 600,
+                  rotateY: 1200
+                }
+              }
+            }
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: false
+              },
+              onclick: {
+                enable: false
+              }
+            }
+          }
+        });
+      });
+
+      window.sr = ScrollReveal();
+      sr.reveal("#header", {
+        duration: 2000,
+        origin: "top",
+        distance: "100px"
+      });
+      sr.reveal(".col-md-pull-5 img", {
+        duration: 2000,
+        origin: "left",
+        distance: "100px"
+      });
+      sr.reveal(".img-right img", {
+        duration: 2000,
+        origin: "right",
+        distance: "100px"
+      });
+      sr.reveal(".featured-text-right", {
+        duration: 2000,
+        origin: "right",
+        distance: "100px"
+      });
+      sr.reveal(".featured-text-left", {
+        duration: 2000,
+        origin: "left",
+        distance: "100px"
+      });
+      sr.reveal("#contact", {
+        duration: 2000,
+        origin: "bottom",
+        viewFactor: 0.5
+      });
+    </script>
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Stephen Lerminiaux's Portfolio</title>
+    <title>Stephen Lerminiaux's Project Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -22,7 +22,21 @@
   </head>
 
   <body>
-    <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top animated slideInDown">
+      <div class="container-fluid">
+        <p class="navbar-text navbar-right">
+          <a
+            href="./designer.html"
+            target="_blank"
+            class="navbar-link"
+            onclick="gaEvent('Designer');"
+            >Click here to see some of my web design/frontend projects!</a
+          >
+        </p>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="padding-top: 70px;">
       <div class="text-center">
         <h1>Stephen Lerminiaux</h1>
         <h3
@@ -36,7 +50,123 @@
         <div class="col-sm-8 col-sm-offset-2">
           <div class="row work-item-row">
             <div class="col-lg-8">
-              <img src="img/RRR.JPG" class="img-responsive center-block" />
+              <img
+                src="img/showcase/Photography.JPG"
+                class="img-responsive center-block"
+              />
+            </div>
+            <div class="col-lg-4">
+              <h2>
+                <a href="https://jillphotowebsite.netlify.com/" target="blank"
+                  >Photography Portfolio</a
+                >
+              </h2>
+              <p>
+                A photo gallery web application.
+              </p>
+              <h4>Technology</h4>
+              <p>
+                This application was created with a React.js frontend, using the
+                react-photo-gallery component. The backend API was built using
+                the Django REST Framework. The frontend is served using Netlify
+                while the Django app is hosted on PythonAnywhere.
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <img
+                src="img/techlogos/django.png"
+                class="techlogo"
+                width="100"
+              />
+              <img src="img/techlogos/drf.png" class="techlogo" width="100" />
+              <img src="img/techlogos/react.png" class="techlogo" width="100" />
+              <img
+                src="img/techlogos/sqlite.png"
+                class="techlogo"
+                width="100"
+              />
+              <img
+                src="img/techlogos/netlify.png"
+                class="techlogo"
+                width="100"
+              />
+            </div>
+          </div>
+          <div class="row text-center" style="margin:20px;">
+            <a
+              class="btn btn-launch"
+              href="https://github.com/lerminis/spacex_launches"
+              target="blank"
+              >View on Github</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row row-white">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="row work-item-row">
+            <div class="col-lg-8 col-lg-push-4">
+              <img
+                src="img/showcase/ForestFires.JPG"
+                class="img-responsive center-block"
+              />
+            </div>
+            <div class="col-lg-4 col-lg-pull-8">
+              <h2>
+                <a href="./firemap5.html" target="blank"
+                  >Forest Fires and Clustering</a
+                >
+              </h2>
+              <p>
+                An unsupervised machine learning model that finds wildfire
+                hotspots in California.
+              </p>
+              <h4>Technology</h4>
+              <p>
+                Created with Python 3.7, extracts California wildfire data
+                points from an sqlite database on
+                <a
+                  href="https://www.kaggle.com/rtatman/188-million-us-wildfires/home"
+                  target="blank"
+                  >kaggle.com</a
+                >, selecting fires that burnt more than 100 acres from
+                2010-2015. Applies the k-means clustering algorithm from the
+                scikit learn library to create a model with optimal locations
+                for heavy firefighting equipment. Uses this model in a small
+                fire response application. Maps the results on auto-generated
+                HTML files with Folium (leaflet.js).
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <img src="img/techlogos/sklearn.png" class="techlogo" />
+              <img src="img/techlogos/numpy.png" class="techlogo" />
+              <img src="img/techlogos/leaflet.png" class="techlogo" />
+              <img src="img/techlogos/matplotlib.png" class="techlogo" />
+              <img src="img/techlogos/sqlite.png" class="techlogo" />
+            </div>
+          </div>
+          <div class="row text-center" style="margin:20px;">
+            <a
+              class="btn btn-launch"
+              href="https://github.com/lerminis/forest_fire_ml"
+              target="blank"
+              >View on Github</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row row-grey">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="row work-item-row">
+            <div class="col-lg-8">
+              <img
+                src="img/showcase/RRR.JPG"
+                class="img-responsive center-block"
+              />
             </div>
             <div class="col-lg-4">
               <h2>
@@ -103,52 +233,54 @@
           <div class="row work-item-row">
             <div class="col-lg-8 col-lg-push-4">
               <img
-                src="img/ForestFires.JPG"
+                src="img/showcase/StepVids.JPG"
                 class="img-responsive center-block"
               />
             </div>
             <div class="col-lg-4 col-lg-pull-8">
               <h2>
-                <a href="./firemap5.html" target="blank"
-                  >Forest Fires and Clustering</a
+                <a href="https://stepvids.azurewebsites.net/" target="blank"
+                  >StepVids</a
                 >
               </h2>
-              <p>
-                An unsupervised machine learning model that finds wildfire
-                hotspots in California.
-              </p>
+              <p>A web application for finding and renting movies.</p>
               <h4>Technology</h4>
               <p>
-                Created with Python 3.7, extracts California wildfire data
-                points from an sqlite database on
-                <a
-                  href="https://www.kaggle.com/rtatman/188-million-us-wildfires/home"
-                  target="blank"
-                  >kaggle.com</a
-                >, selecting fires that burnt more than 100 acres from
-                2010-2015. Applies the k-means clustering algorithm from the
-                scikit learn library to create a model with optimal locations
-                for heavy firefighting equipment. Uses this model in a small
-                fire response application. Maps the results on auto-generated
-                HTML files with Folium (leaflet.js).
+                StepVids is built using ASP.NET MVC and Entity Framework. The
+                goal of StepVids was to become familiar with the
+                Model-View-Controller architecture, design patterns, and
+                code-first migrations. Data was stored in an Azure SQL database
+                and deployed using Microsoft Azure.
               </p>
             </div>
           </div>
           <div class="row text-center">
             <div class="col-xs-12">
-              <img src="img/techlogos/sklearn.png" class="techlogo" />
-              <img src="img/techlogos/numpy.png" class="techlogo" />
-              <img src="img/techlogos/leaflet.png" class="techlogo" />
-              <img src="img/techlogos/matplotlib.png" class="techlogo" />
-              <img src="img/techlogos/sqlite.png" class="techlogo" />
+              <img
+                src="img/techlogos/aspnet.png"
+                class="techlogo"
+                width="100"
+              />
+              <img src="img/techlogos/node.png" class="techlogo" width="100" />
+              <img
+                src="img/techlogos/bootstrap.png"
+                class="techlogo"
+                width="100"
+              />
+              <img
+                src="img/techlogos/jquery.png"
+                class="techlogo"
+                width="100"
+              />
+              <img src="img/techlogos/azure.png" class="techlogo" width="100" />
             </div>
           </div>
           <div class="row text-center" style="margin:20px;">
             <a
               class="btn btn-launch"
-              href="https://github.com/lerminis/forest_fire_ml"
+              href="https://stepvids.azurewebsites.net/"
               target="blank"
-              >View on Github</a
+              >See it here</a
             >
           </div>
         </div>
@@ -157,7 +289,10 @@
         <div class="col-sm-8 col-sm-offset-2">
           <div class="row work-item-row">
             <div class="col-lg-8">
-              <img src="img/SpaceX.JPG" class="img-responsive center-block" />
+              <img
+                src="img/showcase/SpaceX.JPG"
+                class="img-responsive center-block"
+              />
             </div>
             <div class="col-lg-4">
               <h2>
@@ -221,61 +356,7 @@
           </div>
         </div>
       </div>
-      <div class="row row-white">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="row work-item-row">
-            <div class="col-lg-8 col-lg-push-4">
-              <img src="img/StepVids.JPG" class="img-responsive center-block" />
-            </div>
-            <div class="col-lg-4 col-lg-pull-8">
-              <h2>
-                <a href="https://stepvids.azurewebsites.net/" target="blank"
-                  >StepVids</a
-                >
-              </h2>
-              <p>A web application for finding and renting movies.</p>
-              <h4>Technology</h4>
-              <p>
-                StepVids is built using ASP.NET MVC and Entity Framework. The
-                goal of StepVids was to become familiar with the
-                Model-View-Controller architecture, design patterns, and
-                code-first migrations. Data was stored in an Azure SQL database
-                and deployed using Microsoft Azure.
-              </p>
-            </div>
-          </div>
-          <div class="row text-center">
-            <div class="col-xs-12">
-              <img
-                src="img/techlogos/aspnet.png"
-                class="techlogo"
-                width="100"
-              />
-              <img src="img/techlogos/node.png" class="techlogo" width="100" />
-              <img
-                src="img/techlogos/bootstrap.png"
-                class="techlogo"
-                width="100"
-              />
-              <img
-                src="img/techlogos/jquery.png"
-                class="techlogo"
-                width="100"
-              />
-              <img src="img/techlogos/azure.png" class="techlogo" width="100" />
-            </div>
-          </div>
-          <div class="row text-center" style="margin:20px;">
-            <a
-              class="btn btn-launch"
-              href="https://stepvids.azurewebsites.net/"
-              target="blank"
-              >See it here</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="row row-tools row-grey">
+      <div class="row row-tools row-white">
         <div class="col-sm-12 text-center">
           <h3>Tools I Use</h3>
           <img src="img/tool-logos/git.png" class="tool-logo" />
@@ -320,8 +401,7 @@
         </div>
       </div>
       <p class="copyright text-center">
-        &copy; Copyright Stephen Lerminiaux <span id="year"></span>, All Rights
-        Reserved
+        &copy; Stephen Lerminiaux | Copyright <span id="year"></span>
       </p>
     </div>
     <script src="js/main.js"></script>

@@ -44,17 +44,17 @@ class TypeWriter {
 
   type() {
     // Current index of word
-    const current = this.wordIndex % this.words.length;
-    // Get full text of current word
-    const fullTxt = this.words[current];
+    const currentIndex = this.wordIndex % this.words.length;
+    // Get full text of CurrentIndex word
+    const fullText = this.words[currentIndex];
 
     // Check if deleting
     if (this.isDeleting) {
       // Remove char
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      this.txt = fullText.substring(0, this.txt.length - 1);
     } else {
       // Add char
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      this.txt = fullText.substring(0, this.txt.length + 1);
     }
 
     // Insert txt into element
@@ -68,7 +68,7 @@ class TypeWriter {
     }
 
     // If word is complete
-    if (!this.isDeleting && this.txt === fullTxt) {
+    if (!this.isDeleting && this.txt === fullText) {
       // Make pause at end
       typeSpeed = this.wait;
       // Set delete to true

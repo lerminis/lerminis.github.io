@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/split-style.css" />
+    <title>Split Landing Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="split top">
+        <h1>Developer Portfolio</h1>
+        <a href="./developer.html" class="button">See it here</a>
+      </div>
+      <div class="split bottom">
+        <h1>Designer Portfolio</h1>
+        <a href="./designer.html" class="button">See it here</a>
+      </div>
+    </div>
+    <script>
+      const top_half = document.querySelector(".top");
+      const bottom_half = document.querySelector(".bottom");
+      const container = document.querySelector(".container");
+
+      top_half.addEventListener("mouseenter", () => {
+        container.classList.add("hover-top");
+      });
+
+      top_half.addEventListener("mouseleave", () => {
+        container.classList.remove("hover-top");
+      });
+
+      bottom_half.addEventListener("mouseenter", () => {
+        container.classList.add("hover-bottom");
+      });
+
+      bottom_half.addEventListener("mouseleave", () => {
+        container.classList.remove("hover-bottom");
+      });
+    </script>
+  </body>
+</html>
